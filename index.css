@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+/*---------------main div 1 css-----------------  */
+h1{
+    font-weight: 700;
+    font-size: 50px;
+    color: aliceblue;
+}
+h4{
+    font-weight: 700;
+    font-size: 30px;
+    color: aliceblue;
+}
+#mainDivVivek{
+    width: 100%;
+    padding-top:3% ;
+    background-color:#184fa3;
+}
+#V_innerDiv{
+    padding-top: 5%;
+}
+#mainDivVivek > div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.V_container1{
+    margin: auto;
+    width: 55%;
+    height: 100%;
+}
+#imges_wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#play_storeLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.V_container2 >img{
+    width: 110%;
+}
+.V_container2{
+    margin: auto;
+    width: 45%;
+    height: 100%;
+}
+#insta_fb_twtr_logo{
+    height: 50px;
+    width: 100%;
+}
+#insta_fb_twtr_logo>div{
+    display: flex;
+    justify-content: space-between;
+    height :40px;
+    width: 20%;
+}
+#insta_fb_twtr_logo>div>span>a>img{
+    width: 30px;
+}
+#twitterlogo1{
+    width: 30px;
+}
+/* ---------------------------ends---------------------------------- */
+/* -------------------- section 2 css--------------------*/
+#mainDivVivek1{
+    margin-top: 20px;
+}
+#maindiviv2 {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: space-between;
+  gap: 5px;
+}
+/* -------join now button css------- */
+.joinnowbtn{
+    background-color: #39b7ff;
+    border: none;
+    width: 150px;
+    line-height: 30px;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 700;
+    
+}
+.btntxt{
+    color: aliceblue;
+}
+#maindiviv2 h2,h3{
+    color: black;
+    font-weight: 900;
+    font-size: x-large;
+    font: bolder;
+}
+#maindiviv2 h2{
+    margin: 10px 0 20px 0;
+    font-size: x-large;
+}
+#carousel_div{
+    height: 100px;
+}
+#maindiviv2 >div{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+/* -------------------------section 2 ends here----------------------------- */
