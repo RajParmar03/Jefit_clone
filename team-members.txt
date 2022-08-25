@@ -1,5 +1,0 @@
-member1 : raj parmar,
-member2 : sachin tewatia,
-member3 : vivek jawale,
-member4 : ujjawal kumar,
-member5 : aman verma.
