@@ -187,4 +187,20 @@
 #le>div{
     margin-top: 90px;
 }
-
+#div6{
+    background-color: #e7f8ff;
+    width: 75%;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+#div6 h1{
+    font-size: 45px;
+    color: #65bdf0;
+    line-height: 20px;
+}
+#div6>div{
+    margin-top: 70px;
+}
