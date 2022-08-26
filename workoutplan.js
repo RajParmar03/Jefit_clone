@@ -102,33 +102,36 @@ setInterval(show,3000)
 // ====================================
 
 let data = [
-    {a:"",b:'full body | light/heavy days',c:'7 days',d:'Maintaining',e:'Intermediate',f:'0/0',g:'vwnmjji',h:'Free'},
-    {a:"",b:'1 pas 2 PushPull',c:'5 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'al_krokis',h:'Free'},
-    {a:"",b:'Copy of 3 Day - My Custom Routine',c:'3 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'BRJ8',h:'Free'},
-    {a:"",b:'3 Day Full Body Dumbbell Workout',c:'3 days',d:'Bulking',e:'Beginner',f:'6/0',g:'astroboypaul',h:'Free'},
-    {a:"",b:'Upper Lower',c:'4 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'ezekielpee {VIP}',h:'Free'},
-    {a:"",b:'nardicc',c:'3 days',d:'Maintaining',e:'Intermediate',f:'6/0',g:'giorgiogu',h:'Free'},
-    {a:"",b:'Elite - Rest - Pause Training Program',c:'3 days',d:'Bulking',e:'Beginner',f:'6/0',g:'blo43',h:'Free'},
-    {a:"",b:'Puni',c:'4 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'blo43',h:'Free'},
-    {a:"",b:'Aesthetic-Abs Slim fit',c:'4 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'cmt50',h:'Free'},
-    {a:"",b:'AronMolenaars 5 Day Plan',c:'5 days',d:'Maintaining',e:'Intermediate',f:'6/0',g:'nad298',h:'Free'},
-    {a:"",b:'Orange City Rugby',c:'5 days',d:'Sport',e:'Beginner',f:'6/0',g:'al_krokis',h:'Free'},
-    {a:"",b:'?????????',c:'5 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'lughpogo',h:'Free'},
-    {a:"",b:'ppl*arnold',c:'5 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'jonas.sarantaris',h:'Free'},
-    {a:"",b:'Abs Day',c:'3 days',d:'Bulking',e:'Intermediate',f:'6/0',g:'jonas.sarantaris',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'full body | light/heavy days',c:'7 days',d:'Maintaining',e:'Intermediate',f:'0/0',g:'vwnmjji',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_cutting_m.png",b:'1 pas 2 PushPull',c:'5 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'al_krokis',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_cutting_m.png",b:'Copy of 3 Day - My Custom Routine',c:'3 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'BRJ8',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'3 Day Full Body Dumbbell Workout',c:'3 days',d:'Bulking',e:'Beginner',f:'6/0',g:'astroboypaul',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'Upper Lower',c:'4 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'ezekielpee {VIP}',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_cutting_f.png",b:'nardicc',c:'3 days',d:'Maintaining',e:'Intermediate',f:'6/0',g:'giorgiogu',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_cutting_m.png",b:'Elite - Rest - Pause Training Program',c:'3 days',d:'Bulking',e:'Beginner',f:'6/0',g:'blo43',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'Puni',c:'4 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'blo43',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_cutting_f.png",b:'Aesthetic-Abs Slim fit',c:'4 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'cmt50',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'AronMolenaars 5 Day Plan',c:'5 days',d:'Maintaining',e:'Intermediate',f:'6/0',g:'nad298',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'Orange City Rugby',c:'5 days',d:'Sport',e:'Beginner',f:'6/0',g:'al_krokis',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_cutting_m.png",b:'?????????',c:'5 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'lughpogo',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'ppl*arnold',c:'5 days',d:'Maintaining',e:'Beginner',f:'6/0',g:'jonas.sarantaris',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'Abs Day',c:'3 days',d:'Bulking',e:'Intermediate',f:'6/0',g:'jonas.sarantaris',h:'Free'},
+    {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'Abs Day',c:'3 days',d:'Bulking',e:'Intermediate',f:'6/0',g:'jonas.sarantaris',h:'Free'},
 ];
-
+display(data);
+function display (data){
 data.forEach(function(ele){
-
     let row = document.createElement('tr');
     let col = document.createElement('td');
     let d = document. createElement('div');
-    d.innerText = ''
+    d.innerHTML = `<img src='${ele.a}'>`
+   d.setAttribute('id','divid');
+    col.append(d)
     let col2 = document.createElement('td');
     let h4 = document.createElement('h4');
     col2.innerText = ele.b;
     col2.append(h4)
-    col2.style.color= 'teal';
+    col2.style.color= 'rgb(12, 153, 153)';
     let col3 = document.createElement('td');
     col3.innerText = ele.c
     let col4 = document.createElement('td');
@@ -139,9 +142,32 @@ data.forEach(function(ele){
     col6.innerText = ele.f
     let col7 = document.createElement('td');
 col7.innerText = ele.g
-col7.style.color = "teal"
+col7.style.color = "rgb(12, 153, 153)"
 let col8 = document.createElement('td');
 col8.innerText = ele.h
 row.append(col,col2,col3,col4,col5,col6,col7,col8);
 document.querySelector('tbody').append(row)
 })
+}
+//==================================================
+
+const pageButtons = (results,per_page)=>{
+    // document.querySelector('tbody').innerHTML=null;
+let buttons = document.getElementById('button');
+// let results = 45;
+// let per_page = 15;
+let button =Math.ceil(results/per_page);
+for(let i=1;i<=button;i++){
+    let btn = document.createElement('button');
+    btn.innerText= i;
+    btn.onclick = function  (){
+        display(data);
+        console.log('runn');
+    }
+    buttons.append(btn);
+    }
+}
+// let pagination = (pages)=>{
+//     console.log(pages);
+// }
+pageButtons(45,15);

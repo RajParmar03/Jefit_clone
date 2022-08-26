@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     width: 90%;
     margin: auto;
@@ -72,4 +76,8 @@ th:nth-child(7){
 }
 th:nth-child(8){
     width: 14%;
+}
+#divid>img{
+    height: 60px;
+    width: 85px;
 }
