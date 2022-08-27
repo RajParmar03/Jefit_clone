@@ -50,7 +50,22 @@
     .hr{
     width: 110%;
     margin-top: 100px;
-    margin-left: -111px;
+    margin-left: -110px;
     }
     
+    /* original */
+    
+    /* .ast-pagination {
+        display: inline-block;
+        width: 100%;
+        padding-top: 2em;
+        text-align: center;
+    }
+    *, :after, :before {
+        box-sizing: inherit;
+    }
+    
+    div {
+        display: block;
+    } */
     
