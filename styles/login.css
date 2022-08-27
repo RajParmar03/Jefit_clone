@@ -1,0 +1,106 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/fitness_back-ground.jpg);
+    background-size: cover;
+}
+#login{
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#login #logo_img{
+    margin: 50px auto;
+    /* border:1px solid blue; */
+    /* background: blue; */
+}
+#login #login_form{
+    /* border:1px solid blue; */
+    width:50%;
+    border-radius: 10px;
+    background-color: #ebf7ff;
+    margin-bottom: 60px;
+}
+#login #login_form h1{
+    text-align: center;
+    margin-top: 70px;
+    color: #303030;
+}
+#login #login_form form{
+    /* border:1px solid black; */
+    width:90%;
+    margin: auto auto 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+#login #login_form form input{
+    margin-bottom: 20px;
+    padding:15px 5px;
+    border: none;
+    border-radius: 6px;
+}
+#login #login_form form label{
+    margin-bottom: 5px;
+    margin-left: 7px;
+    color: #888888;
+}
+#login #login_form form div{
+    display: flex;
+    justify-content: space-between;
+    /* border:1px solid orange; */
+    width:95%;
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
+#login #login_form form div p ,#login #login_form form div p a{
+    margin:0px;
+    color: #303030;
+}
+#login #login_form form input:last-child{
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #50B6FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#login #login_form form+p{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6E6E6E;
+}
+#login #direct_login{
+    /* border:1px solid blue; */
+    width:30%;
+    margin: auto auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#login #direct_login div{
+    height: 50px;
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid orange; */
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+#login #direct_login+p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#login #direct_login+p a{
+    color: #50B6FF;
+}
+
+
+
+
