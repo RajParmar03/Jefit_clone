@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-/*  */
+body{
+    width: 100%;
+}
 
 .img{
 height: 640px;
@@ -101,7 +102,7 @@ a:hover{
 a{
     color: #257cff;
 }
-=======
+
 .img{
     height: 640px;
     width: 980px;
@@ -158,4 +159,4 @@ a{
     }
     
     
->>>>>>> 96d0cbe768d39467a37f68d74060d30ab59d4741
+
