@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+/*---------------main div 1 css-----------------  */
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: aliceblue;
+}
+#someh4 {
+  font-weight: 700;
+  font-size: 30px;
+  color: aliceblue;
+}
+#mainDivVivek {
+  width: 100%;
+  padding-top: 3%;
+  background-color: #184fa3;
+}
+#V_innerDiv {
+  padding-top: 5%;
+}
+#mainDivVivek > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.V_container1 {
+  margin: auto;
+  width: 55%;
+  height: 100%;
+}
+#imges_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#play_storeLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.V_container2 > img {
+  width: 100%;
+}
+.V_container2 {
+  margin: auto;
+  width: 45%;
+  height: 100%;
+}
+#insta_fb_twtr_logo {
+  height: 50px;
+  width: 100%;
+}
+#insta_fb_twtr_logo > div {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 20%;
+}
+#insta_fb_twtr_logo > div > span > a > img {
+  width: 30px;
+}
+#twitterlogo1 {
+  width: 30px;
+}
+/* ---------------------------ends---------------------------------- */
+/* -------------------- section 2 css--------------------*/
+#mainDivVivek1 {
+  margin-top: 20px;
+}
+#maindiviv2 {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-between;
+  gap: 5px;
+}
+/* -------join now button css------- */
+.joinnowbtn {
+  background-color: #39b7ff;
+  border: none;
+  width: 150px;
+  line-height: 30px;
+  border-radius: 15px;
+  color: aliceblue;
+  font-size: larger;
+  font-weight: 700;
+}
+.btntxt {
+  color: aliceblue;
+}
+#maindiviv2 h2,
+h3 {
+  color: black;
+  font-weight: 900;
+  font-size: x-large;
+  font: bolder;
+  opacity: 0.8;
+}
+#maindiviv2 h2 {
+  margin: 10px 0 20px 0;
+  font-size: x-large;
+  font: bolder;
+}
+#someh2 {
+  color: black;
+}
+#carousel_div {
+  height: 100px;
+}
+#maindiviv2 > div {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+/* -------------------------section 2 ends here----------------------------- */
+#mainDivVivek2 {
+  margin-top: 100px;
+  margin-bottom: 160px;
+  justify-content: center;
+  text-align: center;
+}
+#mainDivVivek2 h2 {
+  font-weight: 700;
+  font-size: xx-large;
+  font: bolder;
+  opacity: 0.8;
+}
+#mainDivVivek3 {
+  margin-top: 20px;
+  width: 100%;
+}
+#mainDivVivek3 div {
+  margin-top: 20px;
+  margin: auto;
+  width: 80%;
+}
+#innerDivViv3 {
+  display: flex;
+  margin-top: 80px;
+}
+#innerDivViv3 div {
+  width: 48%;
+}
+.V_imagecontainer img {
+  width: 100%;
+  margin-top: -80px;
+}
+.innertext {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.innertext > div > h4 {
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+.innertext > div > h1 {
+  color: black;
+  width: 100%;
+}
+#ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  align-items: center;
+}
+ul > img {
+  width: 20px;
+}
+ul > h4 {
+  width: 80%;
+}
+.containerbtn1 > button {
+  margin-left: 20px;
+}
+#mainDivVivek3 {
+  margin-top: 100px;
+}
+#somerandomheading {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+#somerandomheading > h1 {
+  margin: auto;
+  color: black;
+  opacity: 0.7;
+}
+#threecolumns {
+  margin: auto;
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
+}
+#threecolumns>div {
+    margin: auto;
+    display: grid;
+    height: 900px;
+    width: 90%;
+    grid-template-columns: repeat(1, 0.8fr);
+    background-color: #404040;
+    border-radius: 10px;
+  }
+.innercolumndivs>div{
+    width: 80%;
+    height: auto;
+    margin-top: 30%;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.innercolumndivs>div>div>img{
+    width: 60px;
+}
+p{
+    color:#F5F5F5;
+    font-size:22px;
+    font-weight:400;
+    width: 80%;
+}
+#freedwnldbtn {
+    margin-top: -100px;
+}
+#freedwnldbtn button{
+    background-color: transparent;
+    border: 1px solid #F5F5F5;
+    color: #F5F5F5;
+    border-radius: 10px;
+    width: 200px;
+}
+#freedwnldbtn button:hover{
+    background-color: #F5F5F5;
+    text-decoration-color: #184fa3;
+    border-radius: 10px;
+    width: 200px;
+}
+#freedwnldbtn button h3{
+    background-color: transparent;
+    border: #F5F5F5;
+    color: #F5F5F5;
+    border-radius: 10px;
+    width: 200px;
+}
+#freedwnldbtn button h3:hover{
+    background-color: #F5F5F5;
+    color: #184fa3;
+    border-radius: 10px;
+    width: 200px;
+}
+#finalsection{
+    margin-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+#finalsection>div{
+    text-align: center;
+    margin-top: 50px;
+}
+#lasth2tag{
+    color: #2F373D;
+}
+#lastptag{
+    color: #2F373D;
+    margin-left: 125px;
+}
+#lastbtn23{
+    background-color:#39b7ff;
+    color: #F5F5F5;
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+   
+}
+#lastbtn23>h3{
+    color: #F5F5F5;
+    font-size: x-large;
+}
