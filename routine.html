@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>routine</title>
-    <link rel="stylesheet" href="/styles/navbar.css">
-    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         *{
             box-sizing: border-box;
         }
         body {
-            width: 90%;
+            width: 100%;
             margin: auto;
 
         }
@@ -100,91 +100,97 @@
             border-radius: 5px;
             font-size: 12px;
         }
+        #sectionby2bysachin{
+            width: 90%;
+            margin: auto;
+        }
     </style>
 </head>
 
 <body>
     <div class="navbar"></div>
-    <div id="advance">
-        <div id="plan">
-            <h1>Advance Workout Planner : </h1>
-            <h3>Building Muscle starts with Buildinga Planning</h3>
-        </div>
-        <h2>Plan your Workout and bring it to your Gym </h2>
-    </div>
-    <!-- === -->
-    <div style="display:flex;">
-        <!---->
-
-        <div >
-            <div id="input" >
-                <h4>3-Day - My custom Routine</h4>
+    <section id="sectionby2bysachin">
+        <div id="advance">
+            <div id="plan">
+                <h1>Advance Workout Planner : </h1>
+                <h3>Building Muscle starts with Buildinga Planning</h3>
             </div>
-            <div id="select">
-                <div>
-                    <label class="label" for="">Frequency</label>
-                    <select name="" class="label">
-                        <option value="">Day-1(s)/week</option>
-                        <option value="">Day-2(s)/week</option>
-                        <option value="">Day-3(s)/week</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="">Day-Type</label>
-                    <select name="" class="label">
-                        <option value="">Day of week</option>
-                        <option value="">Numerical</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="">Focus</label>
-                    <select name="" class="label">
-                        <option value="">General Fitness</option>
-                        <option value="">Bulking</option>
-                        <option value="">Cutting</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="">Difficulty</label>
-                    <select name="" class="label">
-                        <option value="">Beginner</option>
-                        <option value="">Intermediate</option>
-                        <option value="">Advance</option>
-                    </select>
-                </div>
-            </div>
+            <h2>Plan your Workout and bring it to your Gym </h2>
         </div>
-        <div id="grid">
+        <!-- === -->
+        <div style="display:flex;">
             <!---->
-            <div>Copy Template</div>
-            <div>Share through Link</div>
-            <div>Share a QR Code</div>
+    
+            <div >
+                <div id="input" >
+                    <h4>3-Day - My custom Routine</h4>
+                </div>
+                <div id="select">
+                    <div>
+                        <label class="label" for="">Frequency</label>
+                        <select name="" class="label">
+                            <option value="">Day-1(s)/week</option>
+                            <option value="">Day-2(s)/week</option>
+                            <option value="">Day-3(s)/week</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Day-Type</label>
+                        <select name="" class="label">
+                            <option value="">Day of week</option>
+                            <option value="">Numerical</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Focus</label>
+                        <select name="" class="label">
+                            <option value="">General Fitness</option>
+                            <option value="">Bulking</option>
+                            <option value="">Cutting</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Difficulty</label>
+                        <select name="" class="label">
+                            <option value="">Beginner</option>
+                            <option value="">Intermediate</option>
+                            <option value="">Advance</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="grid">
+                <!---->
+                <div>Copy Template</div>
+                <div>Share through Link</div>
+                <div>Share a QR Code</div>
+            </div>
         </div>
-    </div>
-    <textarea name="routineDesc" placeholder="Description" id="text" cols="30" rows="10">
-        Plan your workout online and take it on the go. Jefit’s Advanced Workout Planner is designed to make planning your workout routine for the week simple. Create your own custom workout plan online with the help of the Jefit exercise library and share it with friends or take it on the go with your phone. 
-        Set this workout plan as your current routine and then add your own exercises. To attach the workout to your account log in and select “set plan”. The workout will be set as your default workout on the workout tab in-app. If you set the plan as your favorite it will appear under “My Plans”.
-        Whether you’re a fitness beginner or expert - Jefit’s advanced workout planner works for any skill level. Build your own workout plan or generate a workout plan that you can customize to meet your needs.  Change the workout schedule to fit your lifestyle and find a routine that works for you.
-    </textarea><br>
-    <button>
-        <h2>Day 1</h2>
-    </button>
-    <button>
-        <h2>Day 2</h2>
-    </button>
-    <button>
-        <h2>Day 3</h2>
-    </button>
+        <textarea name="routineDesc" placeholder="Description" id="text" cols="30" rows="10">
+            Plan your workout online and take it on the go. Jefit’s Advanced Workout Planner is designed to make planning your workout routine for the week simple. Create your own custom workout plan online with the help of the Jefit exercise library and share it with friends or take it on the go with your phone. 
+            Set this workout plan as your current routine and then add your own exercises. To attach the workout to your account log in and select “set plan”. The workout will be set as your default workout on the workout tab in-app. If you set the plan as your favorite it will appear under “My Plans”.
+            Whether you’re a fitness beginner or expert - Jefit’s advanced workout planner works for any skill level. Build your own workout plan or generate a workout plan that you can customize to meet your needs.  Change the workout schedule to fit your lifestyle and find a routine that works for you.
+        </textarea><br>
+        <button>
+            <h2>Day 1</h2>
+        </button>
+        <button>
+            <h2>Day 2</h2>
+        </button>
+        <button>
+            <h2>Day 3</h2>
+        </button>
+    </section>
     <div id="footer"></div>
 </body>
 
 </html>
 <script type="module">
-    import {navbar} from '/components/navbar.js'
+    import {navbar} from './components/navbar.js'
     let nav = document.querySelector('.navbar')
     nav.innerHTML = navbar();
 
-    import {footer} from '/components/footer.js'
+    import {footer} from './components/footer.js'
     let foot = document.querySelector('#footer');
     foot.innerHTML = footer();   
 </script>

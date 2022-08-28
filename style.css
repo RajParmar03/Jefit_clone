@@ -3,10 +3,13 @@
     padding: 0;
 }
 body{
+    width: 100%;
+    margin: auto;
+}
+#mainbysachin{
     width: 90%;
     margin: auto;
 }
-
 .main{
     height: auto;
     width: 100%;

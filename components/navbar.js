@@ -1,5 +1,5 @@
 let navbar = () => {
-    return  `<ul>
+    return ` <ul>
     <li id="logo"><a href="./index.html"><img
                 src="https://www.jefit.com/wp/wp-content/uploads/2017/07/cropped-logo_155_40_white-120x31.webp"
                 alt="JEFIT"></a></li>
@@ -15,11 +15,11 @@ let navbar = () => {
         <div class="sub_menu_1">
             <ul>
                 <li><a href="./workoutplan.html">Pro-designed Plans</a></li>
-                <li><a href="">Create My Plans</a></li>
+                <li><a href="./routine.html">Create My Plans</a></li>
             </ul>
         </div>
     </li>
-    <li><a href="/https://www.jefit.com/exercises/">Exercise Guides</a></li>
+    <li><a href="https://www.jefit.com/exercises/">Exercise Guides</a></li>
     <li><a href="./blog.html">Blog</a></li>
     <li><a href="./coach.html">Coach</a></li>
     <li><a href="./elite.html">Elite</a></li>
