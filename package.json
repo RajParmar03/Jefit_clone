@@ -1,0 +1,19 @@
+{
+  "name": "aquatic-discussion-8005",
+  "version": "1.0.0",
+  "description": "",
+  "main": "workoutplan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RajParmar03/aquatic-discussion-8005.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RajParmar03/aquatic-discussion-8005/issues"
+  },
+  "homepage": "https://github.com/RajParmar03/aquatic-discussion-8005#readme"
+}
