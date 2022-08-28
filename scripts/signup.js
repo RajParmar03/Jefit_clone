@@ -4,7 +4,6 @@ async function signupFunction(){
     event.preventDefault();
     // console.log("form is submitted.")
     try{
-
         let form = document.querySelector("form");
         let username  = form.username.value;
         let email = form.email.value;
@@ -26,6 +25,11 @@ async function signupFunction(){
             });
             let data = await result.json();
             console.log(data);
+            document.getElementById("username").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+            document.getElementById("con_password").value = "";
+            window.location.href = "login.html";
         }else{
             alert("please enter password again.")
         }

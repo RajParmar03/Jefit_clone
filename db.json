@@ -17,6 +17,36 @@
       "email": "anyone@gmail.com",
       "password": "rrrr",
       "id": 3
+    },
+    {
+      "username": "rrrrr",
+      "email": "anyone@gmail.com",
+      "password": "rrrrr",
+      "id": 4
+    },
+    {
+      "username": "raj parmar",
+      "email": "anyone@gmail.com",
+      "password": "rrr",
+      "id": 5
+    },
+    {
+      "username": "rrrr",
+      "email": "anyone@gmail.com",
+      "password": "rrr",
+      "id": 6
+    },
+    {
+      "username": "rrr",
+      "email": "anyone@gmail.com",
+      "password": "rrrrr",
+      "id": 7
+    },
+    {
+      "username": "raj parmar",
+      "email": "anyone@gmail.com",
+      "password": "raju",
+      "id": 8
     }
   ],
   "comments": [
