@@ -9,10 +9,12 @@
     <title>Home | Jefit - #1 Gym / Home workout app</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
-    <div id="navbarViek"></div>
+    <div class="navbar"></div>
     <section id="mainDivVivek">
         <div id="V_innerDiv">
             <div class="V_container1">
@@ -244,7 +246,23 @@
                 </button></a></div=>
     </section>
 
-    <div id="footerbyVivek"></div>
+<!-- fw20_0297_day-5 -->
+    <section id="footer"></section>
+<!-- ======= -->
+    <div id="footer"></div>
+<!-- main -->
 </body>
 
 </html>
+<script type="module">
+    import {navbar} from './components/navbar.js'
+    let nav = document.querySelector('.navbar')
+    nav.innerHTML = navbar();
+
+
+import {footer} from './components/footer.js'
+
+let foot = document.querySelector('#footer');
+foot.innerHTML = footer();   
+
+</script>

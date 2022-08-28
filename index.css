@@ -43,7 +43,9 @@ h1 {
   justify-content: space-evenly;
 }
 .V_container2 > img {
-  width: 110%;
+/* fw20_0297_day-5 */
+  width: 100%;
+
 }
 .V_container2 {
   margin: auto;
@@ -163,7 +165,9 @@ h3 {
   color: black;
   width: 100%;
 }
-ul {
+ fw20_0297_day-5
+#ul {
+/* main */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
