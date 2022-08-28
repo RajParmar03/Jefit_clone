@@ -13,14 +13,11 @@ async function signupFunction(){
         
         if(password === confirm){
             signupObject = {
-                name:"raju parmarheye",
                 username,
                 email,
                 password,
-                mobile : 6546511135,
-                description : "raju parmar ka jalwa."
             }
-            let result = await fetch(`https://masai-api-mocker.herokuapp.com/auth/register`,{
+            let result = await fetch(`http://localhost:3000/posts`,{
                 method : "POST",
                 body : JSON.stringify(signupObject),
                 headers : {

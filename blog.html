@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
     <title>Jefit</title>
-=======
+<!-- ======= -->
     <title>Document</title>
->>>>>>> 96d0cbe768d39467a37f68d74060d30ab59d4741
+<!-- >>>>>>> 96d0cbe768d39467a37f68d74060d30ab59d4741 -->
     <link rel="stylesheet" href="./blog.css">
-
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    
 </head>
 <body>
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
     <!-- first big div starts here include image ,heading ,para and read moree -->
-=======
+<!-- ======= -->
     <!-- first big div starts here include image ,heading ,para and read more -->
->>>>>>> 96d0cbe768d39467a37f68d74060d30ab59d4741
+<!-- >>>>>>> 96d0cbe768d39467a37f68d74060d30ab59d4741 -->
 
 
 
 
-
+    <div class="navbar"></div>
     <div class="cont1">
 
         <!-- image only -->
@@ -514,13 +517,22 @@ Read More »
 <a class="next page-numbers " href="blog.html">Next Page <span class="ast-right-arrow">→</span></a>
 
 </div>
-    </nav></div> </div>
+    <!-- </nav></div> </div> -->
+    <footer id="footer"></footer>
 
 
 
 
-
-=======
->>>>>>> 96d0cbe768d39467a37f68d74060d30ab59d4741
+<!-- ======= -->
+<!-- >>>>>>> 96d0cbe768d39467a37f68d74060d30ab59d4741 -->
 </body>
+<script type="module">
+    import {navbar} from "/components/navbar.js";
+    let navbarDiv = document.querySelector(".navbar");
+    navbarDiv.innerHTML = navbar();
+
+    import {footer} from "/components/footer.js";
+    let footerDiv = document.querySelector("#footer");
+    footerDiv.innerHTML = footer();
+</script>
 </html>
