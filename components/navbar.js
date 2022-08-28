@@ -14,8 +14,8 @@ let navbar = () => {
     <li><a href="">Workout Plans <i class="fa fa-angle-down"></i></a>
         <div class="sub_menu_1">
             <ul>
-                <li><a href="">Pro-designed Plans</a></li>
-                <li><a href="">Create My Plans</a></li>
+                <li><a href="workoutplan.html">Pro-designed Plans</a></li>
+                <li><a href="routine.html">Create My Plans</a></li>
             </ul>
         </div>
     </li>
@@ -28,4 +28,4 @@ let navbar = () => {
 </ul>`;
 }
 
-export {navbar};
+export  {navbar};

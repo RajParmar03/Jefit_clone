@@ -1,3 +1,16 @@
+import {navbar} from './components/navbar.js'
+    let nav = document.querySelector('.navbar')
+    nav.innerHTML = navbar();
+//=======================
+
+import {footer} from './components/footer.js'
+// console.log(footer);
+let foot = document.querySelector('#footer');
+foot.innerHTML = footer();   
+
+//=======================
+
+
 let container = document.querySelector('#main');
 let card1 = document.createElement("div")
 card1.setAttribute("class","main")
@@ -118,10 +131,15 @@ let data = [
     {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'Abs Day',c:'3 days',d:'Bulking',e:'Intermediate',f:'6/0',g:'jonas.sarantaris',h:'Free'},
     {a:"https://www.jefit.com/assets/img/routine/banner-large/wide_bulking_m.png",b:'Abs Day',c:'3 days',d:'Bulking',e:'Intermediate',f:'6/0',g:'jonas.sarantaris',h:'Free'},
 ];
+
 display(data);
 function display (data){
 data.forEach(function(ele){
     let row = document.createElement('tr');
+    row.setAttribute('id','row')
+   row.addEventListener('click',function myfun(){
+    window.location.href = 'https://www.jefit.com/routines/467649/copy-of-3-day-my-custom-routine'
+   })
     let col = document.createElement('td');
     let d = document. createElement('div');
     d.innerHTML = `<img src='${ele.a}'>`
@@ -149,6 +167,8 @@ row.append(col,col2,col3,col4,col5,col6,col7,col8);
 document.querySelector('tbody').append(row)
 })
 }
+
+
 //==================================================
 
 const pageButtons = (results,per_page)=>{

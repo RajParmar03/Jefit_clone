@@ -1,55 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>routine</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        
-        body{
-            width: 80%;
-            margin: auto;
-            
+        *{
+            box-sizing: border-box;
         }
-        #plan{
-    display: flex;
-    gap: 20px;
-    color: grey;
-    }
-    #advance{
-    margin: 140px 0px 20px 0px;
-    color: grey;
-    }
-    #input{
-        color: grey;
-        width: 70%;
-        height: 40px;
-        padding: 5px;
-        background-color: rgb(237, 232, 232);
-        border-radius: 5px;
-        border: 1px solid rgb(201, 199, 199);
-        box-shadow: rgba(12, 12, 15, 0.2) 0px 7px 29px 0px;
-    }
-    #select{
-        display: flex;
-        width: 40%;
-        gap:90px;
-        margin: 30px 0 30px 0;
-    }
-    .label{
-        margin-top: 10px;
-    }
-    #text{
-        height: 80px;
-        color: #303030;
-        width: 70%;
-        background-color: rgb(233, 232, 232);
-        border-radius: 8px;
-    }
+        body {
+            width: 90%;
+            margin: auto;
+
+        }
+
+        #plan {
+            display: flex;
+            gap: 20px;
+            color: grey;
+        }
+
+        #advance {
+            margin: 140px 0px 20px 0px;
+            color: grey;
+        }
+
+        #input {
+            color: grey;
+            width: 70%;
+            height: 40px;
+            padding: 5px;
+            background-color: rgb(237, 232, 232);
+            border-radius: 5px;
+            border: 1px solid rgb(201, 199, 199);
+            box-shadow: rgba(12, 12, 15, 0.2) 0px 7px 29px 0px;
+        }
+
+        #select {
+            display: flex;
+            width: 40%;
+            gap: 90px;
+            margin: 30px 0 30px 0;
+        }
+
+        .label {
+            margin-top: 10px;
+        }
+
+        #text {
+            height: 80px;
+            color: #303030;
+            width: 70%;
+            background-color: rgb(233, 232, 232);
+            border-radius: 8px;
+        }
+
+        button {
+            width: 25%;
+            margin-top: 20px;
+            border-radius: 8px;
+            height: 43px;
+        }
+
+        button:hover {
+            background-color: yellow;
+            cursor: pointer;
+        }
+
+        #grid {
+            margin-right: 100px;
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 40px 40px;
+            gap: 5px 10px;
+        }
+        
+        #grid>div:nth-child(1) {
+            grid-area: 1/1/-1/2;
+            background-color: rgb(92, 193, 193);
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        #grid>div:nth-child(2) {
+            grid-area: 1/2/2/-1;
+            background-color: grey;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        #grid>div:nth-child(3) {
+            grid-area: 2/2/-1/-1;
+            background-color: grey;
+            border-radius: 5px;
+            font-size: 12px;
+        }
     </style>
 </head>
+
 <body>
+    <div class="navbar"></div>
     <div id="advance">
         <div id="plan">
             <h1>Advance Workout Planner : </h1>
@@ -57,46 +112,79 @@
         </div>
         <h2>Plan your Workout and bring it to your Gym </h2>
     </div>
-    <div id="input">
-        <h4>3-Day - My custom Routine</h4>
-    </div>
-    <div id="select">
-        <div>
-            <label class="label" for="">Frequency</label>
-            <select name="" class="label">
-                <option value="">Day-1(s)/week</option>
-                <option value="">Day-2(s)/week</option>
-                <option value="">Day-3(s)/week</option>
-            </select>
+    <!-- === -->
+    <div style="display:flex;">
+        <!---->
+
+        <div >
+            <div id="input" >
+                <h4>3-Day - My custom Routine</h4>
+            </div>
+            <div id="select">
+                <div>
+                    <label class="label" for="">Frequency</label>
+                    <select name="" class="label">
+                        <option value="">Day-1(s)/week</option>
+                        <option value="">Day-2(s)/week</option>
+                        <option value="">Day-3(s)/week</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Day-Type</label>
+                    <select name="" class="label">
+                        <option value="">Day of week</option>
+                        <option value="">Numerical</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Focus</label>
+                    <select name="" class="label">
+                        <option value="">General Fitness</option>
+                        <option value="">Bulking</option>
+                        <option value="">Cutting</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Difficulty</label>
+                    <select name="" class="label">
+                        <option value="">Beginner</option>
+                        <option value="">Intermediate</option>
+                        <option value="">Advance</option>
+                    </select>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="">Day-Type</label>
-            <select name="" class="label">
-                <option value="">Day of week</option>
-                <option value="">Numerical</option>
-            </select>
-        </div>
-        <div>
-            <label for="">Focus</label>
-            <select name="" class="label">
-                <option value="">General Fitness</option>
-                <option value="">Bulking</option>
-                <option value="">Cutting</option>
-            </select>
-        </div>
-        <div>
-            <label for="">Difficulty</label>
-            <select name="" class="label">
-                <option value="">Beginner</option>
-                <option value="">Intermediate</option>
-                <option value="">Advance</option>
-            </select>
+        <div id="grid">
+            <!---->
+            <div>Copy Template</div>
+            <div>Share through Link</div>
+            <div>Share a QR Code</div>
         </div>
     </div>
     <textarea name="routineDesc" placeholder="Description" id="text" cols="30" rows="10">
         Plan your workout online and take it on the go. Jefit’s Advanced Workout Planner is designed to make planning your workout routine for the week simple. Create your own custom workout plan online with the help of the Jefit exercise library and share it with friends or take it on the go with your phone. 
         Set this workout plan as your current routine and then add your own exercises. To attach the workout to your account log in and select “set plan”. The workout will be set as your default workout on the workout tab in-app. If you set the plan as your favorite it will appear under “My Plans”.
         Whether you’re a fitness beginner or expert - Jefit’s advanced workout planner works for any skill level. Build your own workout plan or generate a workout plan that you can customize to meet your needs.  Change the workout schedule to fit your lifestyle and find a routine that works for you.
-    </textarea>
+    </textarea><br>
+    <button>
+        <h2>Day 1</h2>
+    </button>
+    <button>
+        <h2>Day 2</h2>
+    </button>
+    <button>
+        <h2>Day 3</h2>
+    </button>
+    <div id="footer"></div>
 </body>
+
 </html>
+<script type="module">
+    import { navbar } from './components/navbar.js'
+    let nav = document.querySelector('.navbar')
+    nav.innerHTML = navbar();
+
+    import { footer } from './components/footer.js'
+    let foot = document.querySelector('#footer');
+    foot.innerHTML = footer();   
+</script>
