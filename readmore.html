@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./readmore.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    
 </head>
 <body>
     <!-- big divv -->
+    <div class="navbar"></div>
 
 
     <div id="bigdiv">
@@ -147,5 +152,16 @@
 </div>
 
     </div>
+    <footer id="footer"></footer>
+
 </body>
+<script type="module">
+    import {navbar} from "/components/navbar.js";
+    let navbarDiv = document.querySelector(".navbar");
+    navbarDiv.innerHTML = navbar();
+
+    import {footer} from "/components/footer.js";
+    let footerDiv = document.querySelector("#footer");
+    footerDiv.innerHTML = footer();
+</script>
 </html>
