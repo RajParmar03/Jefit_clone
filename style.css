@@ -81,3 +81,7 @@ th:nth-child(8){
     height: 60px;
     width: 85px;
 }
+#row:nth-child(even){
+    background-color:rgb(232, 232, 232) ;
+    cursor: pointer;
+}
